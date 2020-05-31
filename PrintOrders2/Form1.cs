@@ -51,5 +51,10 @@ namespace PrintOrders2
                 ordersBindingSource.DataSource = db.Query<Orders>(query, commandType: CommandType.Text);
             }
         }
+
+        private void ordersBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
